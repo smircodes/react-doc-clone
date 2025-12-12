@@ -1,0 +1,153 @@
+@theme {
+  /* Font */
+  --font-source-code-bold: "source-code-bold";
+
+  /* --- Colors from your colors.js --- */
+  --color-primary: #23272f;
+  --color-primary-dark: #f6f7f9;
+  --color-secondary: #404756;
+  --color-secondary-dark: #ebecf0;
+  --color-tertiary: #5e687e;
+  --color-tertiary-dark: #99a1b3;
+  --color-link: #087ea4;
+  --color-link-dark: #58c4dc;
+  --color-syntax: #ebecf0;
+  --color-wash: #ffffff;
+  --color-wash-dark: #23272f;
+  --color-card: #f6f7f9;
+  --color-card-dark: #343a46;
+  --color-highlight: #e6f7ff;
+  --color-highlight-dark: rgba(88, 175, 223, 0.1);
+  --color-border: #ebecf0;
+  --color-border-dark: #343a46;
+  --color-secondary-button: #ebecf0;
+  --color-secondary-button-dark: #404756;
+  --color-brand: #087ea4;
+  --color-brand-dark: #58c4dc;
+
+  /* Grays */
+  --color-gray-95: #16181d;
+  --color-gray-90: #23272f;
+  --color-gray-80: #343a46;
+  --color-gray-70: #404756;
+  --color-gray-60: #4e5769;
+  --color-gray-50: #5e687e;
+  --color-gray-40: #78839b;
+  --color-gray-30: #99a1b3;
+  --color-gray-20: #bcc1cd;
+  --color-gray-15: #d0d3dc;
+  --color-gray-10: #ebecf0;
+  --color-gray-5: #f6f7f9;
+
+  /* Blues */
+  --color-blue-80: #043849;
+  --color-blue-60: #045975;
+  --color-blue-50: #087ea4;
+  --color-blue-40: #149eca;
+  --color-blue-30: #58c4dc;
+  --color-blue-20: #abe2ed;
+  --color-blue-10: #e6f7ff;
+  --color-blue-5: #e6f6fa;
+
+  /* Yellows */
+  --color-yellow-60: #b65700;
+  --color-yellow-50: #c76a15;
+  --color-yellow-40: #db7d27;
+  --color-yellow-30: #fabd62;
+  --color-yellow-20: #fcdeb0;
+  --color-yellow-10: #fde7c7;
+  --color-yellow-5: #fef5e7;
+
+  /* Purples */
+  --color-purple-60: #2b3491;
+  --color-purple-50: #575fb7;
+  --color-purple-40: #6b75db;
+  --color-purple-30: #8891ec;
+  --color-purple-20: #c3c8f5;
+  --color-purple-10: #e7e9fb;
+  --color-purple-5: #f3f4fd;
+
+  /* Greens */
+  --color-green-60: #2b6e62;
+  --color-green-50: #388f7f;
+  --color-green-40: #44ac99;
+  --color-green-30: #7fccbf;
+  --color-green-20: #abded5;
+  --color-green-10: #e5f5f2;
+  --color-green-5: #f4fbf9;
+
+  /* Reds */
+  --color-red-60: #712d28;
+  --color-red-50: #a6423a;
+  --color-red-40: #c1554d;
+  --color-red-30: #d07d77;
+  --color-red-20: #e5b7b3;
+  --color-red-10: #f2dbd9;
+  --color-red-5: #faf1f0;
+
+  /* Misc */
+  --color-code-block: #99a1b30f;
+  --color-gradient-blue: #58c4dc;
+  /* github highlight is deeply nested — you can flatten or namespace as needed */
+  --color-github-highlight: #fffbdd;
+
+  /* --- Screens / Breakpoints --- */
+  /* default Tailwind breakpoints remain; you add your custom ones: */
+  --breakpoint-xs: 374px;
+  --breakpoint-3xl: 1919px;
+  /* If you want the `betterhover` raw media query: */
+  --media-betterhover: "(hover: hover)";
+
+  /* --- Box Shadows (from your v3 config) --- */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-default: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0px 0.8px 2px rgba(0, 0, 0, 0.032),
+    0px 2.7px 6.7px rgba(0, 0, 0, 0.048), 0px 12px 30px rgba(0, 0, 0, 0.08);
+  --shadow-lg-dark: 0 0 0 1px rgba(255, 255, 255, 0.15),
+    0px 0.8px 2px rgba(0, 0, 0, 0.032), 0px 2.7px 6.7px rgba(0, 0, 0, 0.048),
+    0px 12px 30px rgba(0, 0, 0, 0.08);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  --shadow-3xl: 0 35px 60px -15px rgba(0, 0, 0, 0.3);
+  --shadow-nav: 0 16px 32px -16px rgba(0, 0, 0, 0.1),
+    0 0 0 1px rgba(0, 0, 0, 0.1);
+  --shadow-nav-dark: 0 16px 32px -16px rgba(0, 0, 0, 0.1),
+    0 0 0 1px rgba(255, 255, 255, 0.05);
+  --shadow-inner: inset 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+  --shadow-inner-border: inset 0 0 0 1px rgba(0, 0, 0, 0.08);
+  --shadow-inner-border-dark: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+  --shadow-outer-border: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  --shadow-outer-border-dark: 0 0 0 1px rgba(255, 255, 255, 0.1);
+  --shadow-secondary-button-stroke: inset 0 0 0 1px #d9dbe3;
+  --shadow-secondary-button-stroke-dark: inset 0 0 0 1px #404756;
+
+  /* --- Font Families --- */
+  --font-display: "Optimistic Display", -apple-system, system-ui, sans-serif;
+  --font-text: "Optimistic Text", -apple-system, system-ui, sans-serif;
+  --font-mono: "Source Code Pro", ui-monospace, monospace;
+
+  /* --- Line Heights --- */
+  --leading-base: 30px;
+  --leading-large: 38px;
+  --leading-xl: 1.15;
+
+  /* --- Font Sizes --- */
+  --text-6xl: 52px;
+  --text-5xl: 40px;
+  --text-4xl: 32px;
+  --text-3xl: 28px;
+  --text-2xl: 24px;
+  --text-xl: 20px;
+  --text-lg: 17px;
+  --text-base: 15px;
+  --text-sm: 13px;
+  --text-xs: 11px;
+  --text-code: calc(1em - 20%);
+
+  /* --- Opacity custom value --- */
+  --opacity-8: 0.08;
+}
